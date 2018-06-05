@@ -1,0 +1,35 @@
+.rond {
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:5px solid #000000; 
+}
+
+.carre {
+  width:160px;
+  height:160px;
+  border:5px solid #000000; 
+}
+.losange {
+    width:160px;
+  height:160px;
+  border:5px solid #000000; 
+  transform: rotate(45deg);
+  margin: 0 40px;
+}
+
+ul li {
+ display: inline-block;
+ margin: 5px;
+}
+
+.red {
+    background-color: red;
+}
+.vide {
+    background-color: transparent;
+}
+
+.blue {
+    background-color: blue;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+    
+<body>
+    <ul>
+        <li> <div class="carre" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+    </ul>
+    <ul>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="carre" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+    </ul>
+    <ul>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="losange" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+    </ul>
+    <ul>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="carre" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+    </ul>
+    <ul>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="rond" ></div> </li>
+        <li> <div class="carre" ></div> </li>
+    </ul>
+    <button class="addbackground">plein</button>
+    <button class="emptybackground">vide</button>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+    $(".addbackground").click(function(){
+        $("div").toggleClass("red");
+    });
+         $(".emptybackground").click(function(){
+        $("div").toggleClass("vide");
+    });
+          $(".rond").click(function(){
+        $(this).toggleClass("blue");
+    });
+});
+    </script>
+    
+</body>
+</html>
