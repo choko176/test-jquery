@@ -7,7 +7,7 @@
 </head>
     
 <body>
-    <ul>
+    <ul class="first">
         <li> <div class="carre" ></div> </li>
         <li> <div class="rond" ></div> </li>
         <li> <div class="rond" ></div> </li>
@@ -49,14 +49,21 @@
     <script>
      $(document).ready(function(){
     $(".addbackground").click(function(){
+        $("div").removeClass('vide');
+        $("div").removeClass('blue');
         $("div").toggleClass("red");
+        
     });
          $(".emptybackground").click(function(){
-        $("div").toggleClass("vide");
+            $("div").removeClass('red');
+            $("div").removeClass('blue');
+            $("div").toggleClass("vide");
     });
           $(".rond").click(function(){
-        $(this).toggleClass("blue");
+            $("div").removeClass('vide');
+            $(this).toggleClass("blue");
     });
+         
 });
     </script>
     
